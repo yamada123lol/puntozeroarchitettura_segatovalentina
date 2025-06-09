@@ -1,0 +1,45 @@
+<%=
+    render partial: "navbar",
+    locals: {
+          menu_1:"Progetti",
+          menu_2:"Servizi",
+          menu_3:"Team",
+          descrizione:"Punto Zero è uno studio di architettura che offre servizi di progettazione architettonica, interior design e ristrutturazioni.",
+          titolo:"Punto Zero Architettura",
+    }
+%>
+
+<%=
+    render partial: "chi_siamo",
+    locals: {
+        titolo: 'STUDIO DI ARCHITETTURA E DESIGN',
+        descrizione: 'Punto Zero è uno studio romano con progetti in tutta Italia. Lo studio concepisce l\'architettura e il design come una ricerca etica, estetica e pratica volta a portare felicità. Ogni progetto, sia esso uno spazio o un oggetto, è incentrato sulle persone, il vero "punto zero" da cui tutto viene concepito, in equilibrio tra arte, psicologia e implacabile perfezionismo.',
+        caption: '',
+
+    }
+%>
+
+<%= render partial: "card",
+    locals: {
+        carditems: @carditems
+    }
+%>
+
+<div class=" flex flex-col md:items-center space-y-6 py-20 items-start">
+    <div class="flex flex-col p-6 h-50 m-3 space-y-5 bg-white rounded-2xl w-1/2 md:space-y-3 md:m-0 md:p-12 md:items-center ">
+        <p class="md:text-center md:text-3xl text-2xl font-bold" >« Senza le persone non esiste progetto, non esiste architettura, non esiste design. Sono loro il nostro Punto Zero »</p>
+    </div>
+</div>
+
+<%=
+    render partial: "team",
+    locals: {
+        titolo: ' Il nostro team ',
+        descrizione: "Giorgio Marchese",
+        bottone:"Scopri il servizio",
+        descrizione_1:"Arianna Nobile",
+        bottone_1:"Cottantaci",
+        descrizione_2:"Silvia Firmani",
+        bottone_2:"Scopri di più",
+    }
+%>

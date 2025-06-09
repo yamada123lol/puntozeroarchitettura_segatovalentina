@@ -1,0 +1,19 @@
+<div class="pt-60">
+    <div class="flex flex-row justify-center h-90 md:h-[600px] w-full bg-white bg-cover bg-center pt-10 gap-6 ">
+
+        <% carditems.each do |carditem| %>
+            <div class="flex flex-col w-xl  h-auto bg-white rounded-4xl bg-no-repeat bg-cover shadow-2xl" style= "background-position: center; background-image:url('<%= carditem.immagine %>'); background-color: rgba(0,0,0,0.75);">
+                <div class=" text-3xl  text-white w-full pt-30 md:pt-90 px-10 font-bold">
+                    <%= carditem.titolo %>
+                </div>
+
+                <div class=" text-3xl px-10 text-white font-bold">
+                    <%= carditem.anno %>
+                </div>
+                <div class=" text-4xl px-10 pb-10 pt-5 text-white font-bold">
+                    <button type='button' class='py-2.5 px-6 text-xl rounded-3xl font-bold text-center bg-white text-black'><%= carditem.bottone %></button>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
