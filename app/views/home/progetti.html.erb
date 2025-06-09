@@ -1,1 +1,15 @@
-<p>cioo</p>
+<%=
+    render partial: "navbar",
+    locals: {
+          immagine:"https://wallpapers.com/images/hd/4k-architecture-ornamental-ceiling-1f242e2u8dnomizn.jpg",
+          menu_1:"Progetti",
+          menu_2:"Servizi",
+          menu_3:"Team",
+          descrizione:"Punto Zero è uno studio di architettura che offre servizi di progettazione architettonica, interior design e ristrutturazioni.",
+          titolo:"Punto Zero Architettura",
+    }
+%>
+
+    <%= render partial: "progetti", locals: {
+        members: @members
+    } %>
