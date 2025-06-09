@@ -1,22 +1,28 @@
-<div class="static h-160 m-3 space-y-5 bg-white md:space-y-3 md:m-0  bg-no-repeat bg-cover" style= "background-image:url(https://cdn.sanity.io/images/c9kbt96b/production/e44dcfd4f05c83708af0a423371323244a621b07-2000x1000.jpg?rect=134,0,1866,1000&w=1920&q=75&fit=clip&auto=format);">
-    <div class="w-full h-160 absolute bg-black" style="opacity: 0.07" >
-    </div>
+<div class="static h-110 md:h-160 m-3 space-y-5 bg-white md:space-y-3 md:m-0 mb-20 md:mb-0 bg-no-repeat bg-cover" style= "background-image:url(https://cdn.sanity.io/images/c9kbt96b/production/e44dcfd4f05c83708af0a423371323244a621b07-2000x1000.jpg?rect=134,0,1866,1000&w=1920&q=75&fit=clip&auto=format);">
+    <div class="w-full h-110 md:h-160 absolute" style="background-color: rgba(145, 145, 145, 0.3)" >
+    
 
     <nav class="bg-primary py-4">
         <div class="container mx-auto flex flex-row items-center">
-            <img  src="https://static.vecteezy.com/ti/vettori-gratis/p1/8709523-architettura-logo-design-modello-architetto-e-costruzione-modello-logo-gratuito-vettoriale.jpg"  class="w-40 h-auto rounded-xl"/>
+            <img  src="https://static.vecteezy.com/ti/vettori-gratis/p1/8709523-architettura-logo-design-modello-architetto-e-costruzione-modello-logo-gratuito-vettoriale.jpg"  class="w-30 md:w-40 h-auto rounded-xl ml-5"/>
             
 
             <div class="w-full flex md:justify-end " id="navbarColor01">
-                <ul class="flex flex-col md:flex-row md:space-x-20 md:mt-0 md:text-sm md:font-medium justify-center md:pl-10">
+                <ul class="flex flex-row md:flex-row md:space-x-20 md:mt-0 md:text-sm md:font-medium justify-center md:pl-10">
                 <li>
-                <button class="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-lg" href="#"><%= menu_1 %></button>
+                <a href="/progetti">
+                    <button class="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-lg" ><%= menu_1 %></button>
+                </a>
                 </li>
                 <li>
+                <a href="/servizi">
                 <button class="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-lg" href="#"><%= menu_2 %></button>
+                </a>
                 </li>
                 <li>
+                <a href="/team">
                 <button class="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-lg" href="#"><%= menu_3 %></button>
+                </a>
                 </li>
             </div>
         </div>
@@ -25,10 +31,10 @@
 
         
         
-        <div class="pt-50 md:text-4xl w-2/3 text-white font-semibold text-3xl px-20">
+        <div class="pt-10 md:pt-50 md:text-4xl md:w-2/3 text-white font-semibold text-3xl pl-5 md:px-20">
             <%= titolo %>
         </div>
-        <div class=" text-white font-bold text-lg px-20 w-1/2"><%= descrizione %></div>
-        
+        <div class=" text-white font-bold text-lg px-5 md:px-20 md:w-1/2 w-full"><%= descrizione %></div>
+      </div>  
     </div>
 </div>

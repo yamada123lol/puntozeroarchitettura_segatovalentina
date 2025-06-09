@@ -6,8 +6,12 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get '/home', to: 'home#index', as: 'home'
-  root 'home#index' 
 
+  get '/progetti', to:'home#progetti'
+  get '/servizi', to:'home#servizi'
+  get '/team', to:'home#team'
+
+  root 'home#index'
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
