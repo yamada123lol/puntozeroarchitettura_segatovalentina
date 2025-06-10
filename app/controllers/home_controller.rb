@@ -11,7 +11,7 @@ class HomeController < ApplicationController
             
         ]
     end
-    def progetti
+    def team
         @members = [
                 OpenStruct.new(name: "Dal Mo ", 
                     image_url: "https://images.pexels.com/photos/842548/pexels-photo-842548.jpeg?auto=compress&cs=tinysrgb&w=600", 
