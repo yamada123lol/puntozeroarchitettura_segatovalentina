@@ -5,7 +5,36 @@
           menu_1:"Progetti",
           menu_2:"Servizi",
           menu_3:"Team",
-          descrizione:"Punto Zero è uno studio di architettura che offre servizi di progettazione architettonica, interior design e ristrutturazioni.",
-          titolo:"Punto Zero Architettura",
+          descrizione:"Per un progetto che parta sempre da un punto zero. Da te.",
+          titolo:"I Nostri Servizi",
+    }
+%>
+
+<%=
+    render partial: "servizi",
+    locals: {
+        titolo:'Architettura',
+        descrizione:'Progettare uno spazio che prima non esisteva è una sfida avvincente. Perché c’è sempre qualcosa che invece esisteva già: il luogo in cui quell’architettura andrà ad inserirsi. Non solo il paesaggio visibile, 
+        ma anche i valori estetici ed etici di un territorio o una comunità. Ogni opera architettonica – che sia una nuova villa, un palazzo, l’allestimento per uno spazio esterno o un giardino – deve saper dialogare con il contesto 
+        e al contempo parlare la lingua del suo committente. A noi architetti sta il compito di saper ascoltare entrambe le parti e metterle in comunicazione tra loro. Trovare il punto d’unione, che annulli ogni distanza tra le persone e i luoghi. 
+        Il punto zero. È così che amiamo lavorare.',
+        titolo_1:'Interni',
+        descrizione_1:'Sappiamo che gli architetti si scelgono soprattutto per il loro gusto, in particolare quando si parla di casa propria, del proprio negozio o magari dei nuovi uffici della propria azienda. Lo sappiamo e siamo 
+        felici di scoprire che con i nostri clienti condividiamo spesso non solo il gusto ma una certa visione del mondo.Allo stesso tempo, siamo certi che un progetto non sia un’opera d’arte e che abbia bisogno di creatività, mestiere, 
+        tecnica, affidabilità e su tutto, una grande capacità di ascolto. Perché quegli spazi parlino davvero di chi dovrà abitarli, non di chi li ha costruiti.',
+        titolo_2:'Design d’arredo',
+        descrizione_2:'Il design è sempre la soluzione ad un problema. Così nascono tutti i nostri arredi su misura: armadi, mobili contenitori, mobili da cucina, librerie e pareti che trasformano spazi, con minimalismo e carattere. 
+        Ma se ancora non si fosse posto, il problema? Pensiamo che a volte sia interessante trovare soluzioni, sì, ma ai desideri delle persone: intercettarli, ancora prima che vengano espressi, elaborarli, ispirarsi a loro e aggiungere la propria creatività. 
+        È così, ad esempio, che è nata la nostra prima linea di tavoli e tavolini Franca e Allegra, pezzi unici a lavorazione artigianale, disponibili unicamente su ordinazione.',
+    }
+%>
+
+<%= render partial: 'footer',
+      locals:{
+        iscriviti:"Iscriviti alla newsletter",
+        sconto:"Per te il 15% di sconto sul primo acquisto",
+        newsletter:"Iscriviti alla newsletter",
+        assistenza:"Assistenza",
+        informazioni:"Informazioni su",  
     }
 %>
