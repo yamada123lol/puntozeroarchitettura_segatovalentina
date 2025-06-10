@@ -5,8 +5,27 @@
           menu_1:"Progetti",
           menu_2:"Servizi",
           menu_3:"Team",
-          descrizione:"Punto Zero è uno studio di architettura che offre servizi di progettazione architettonica, interior design e ristrutturazioni.",
-          titolo:"Punto Zero Architettura",
+          descrizione:"Mettiamo la stessa passione in tutto il processo, a partire dal primo giorno di progetto fino all’ultimo della sua esecuzione, combinando sempre creatività e funzionalità.",
+          titolo:"I Nostri Progetti",
     }
 %>
 
+<%= render partial: "progetti", locals: {
+    members: @members
+} %>
+
+<img  src="https://t4.ftcdn.net/jpg/04/19/86/79/360_F_419867937_P5wKV4YPWHPyF2VkgS0JGNCdKSW5Dw8T.jpg"  class="w-full h-40"/>
+
+<%= render partial: "progetti", locals: {
+    members: @members1
+} %>
+
+<%= render partial: 'footer',
+      locals:{
+        iscriviti:"Iscriviti alla newsletter",
+        sconto:"Per te il 15% di sconto sul primo acquisto",
+        newsletter:"Iscriviti alla newsletter",
+        assistenza:"Assistenza",
+        informazioni:"Informazioni su",  
+    }
+%>
